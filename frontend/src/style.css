@@ -1,0 +1,289 @@
+
+.navbar {
+    max-width: 82%;
+    height: 75px;
+    margin: 0 auto;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.links .link {
+    text-decoration: none;
+    color: black;
+    /* margin: 0 10px; */
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+
+}
+.links h6 {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.links span {
+    cursor: pointer;
+    margin-bottom: 9px;
+}
+.write {
+    background-color: rgb(170, 245, 232);
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    border: 1px solid white;
+    font-size: 14px;
+}
+
+.write :hover {
+    color: teal;
+    background-color: white;
+    border: 1px solid teal;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.home {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.posts {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+.post {
+    display: flex;
+    gap: 100px;
+}
+
+.post:nth-child(2n+1) {
+    flex-direction: row-reverse;
+}
+
+.post .img{
+    flex: 2;
+    position: relative;
+    /* z-index: 2; */
+}
+
+.post .img ::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color:rgb(170, 245, 232) ;
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    z-index: -1;
+}
+
+
+
+.post .img img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    
+}
+
+.post .content {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post .content h1{
+    font-size: 48px;
+}
+.post .content p {
+    font-size: 18px;
+}
+
+.post .content .pc-btn {
+    width: max-content;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid teal;
+    color: teal;
+}
+
+.pc-btn {
+    width: max-content;
+    /* padding: 10px 20px; */
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid teal;
+    color: teal;
+}
+
+.pc-btn:hover{
+    border: 1px solid white;
+    background-color: rgb(170, 245, 232) ;
+    color: black;
+}
+
+.post .content .pc-btn:hover {
+    border: 1px solid white;
+    background-color: rgb(170, 245, 232) ;
+    color: black;
+}
+
+/* Single post  */
+
+.single {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+}
+.single .s-content {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.single .s-content .s-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.single .menu {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.single .menu h2 {
+    font-size: 20px;
+}
+
+.single .menu .post {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.single .menu img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.user .user_img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.edit {
+    display: flex;
+    gap: 5px;
+}
+
+p{
+    text-align: justify;
+    line-height: 30px;
+}
+
+.add{
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.add .content {
+    flex: 5;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+}
+.add .menu {
+    flex: 2;
+}
+.add input {
+    padding: 10px;
+    border: 1px solid lightgray;
+  }
+  
+ .add .editorContainer {
+    height: 300px;
+    overflow: scroll;
+    border: 1px solid lightgray;
+  }
+
+  .add .editor {
+    height: 100%;
+    border: none;
+  }
+
+  .add .menu   .item {
+    border: 1px solid lightgray;
+    padding: 10px;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #555;
+  }
+
+  .add .menu  .file{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .add .menu  .buttons{
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 0;
+    margin-right: 20px;
+  }
+
+  .item .buttons:first-child{
+    cursor: pointer;
+    color: teal;
+    background-color: white;
+    border: 1px solid teal;
+    padding: 3px 5px;
+  }
+  .item .buttons:last-child{
+    cursor: pointer;
+    color: white;
+    /* background-color: rgb(211, 247, 241);
+    border: 1px solid teal; */
+    padding: 3px 5px;
+  }
+
+  .add .menu .cat{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    color: teal;
+  }
